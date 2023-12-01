@@ -689,6 +689,10 @@ svg {
     margin: 22px auto;
 }
 
+.d-none{
+    display: none;
+}
+
 /* Common CSS End */
 
 /* Landing Page End */
@@ -760,12 +764,14 @@ svg {
     .nav,
     .header-container-landing .nav,
     .notification,
-    .profile {
+    .profile,
+    main,
+    footer {
         display: none;
     }
 
     .header-container-landing {
-        margin-top: 0px;
+        margin-top: 5px;
     }
 
     .header-container .header-logo,
@@ -873,6 +879,10 @@ svg {
 
     .profile-mob .short-form {
         margin-left: 0px;
+    }
+
+    .header-container-landing .raise-ticket .raise-ticket-btn{
+        padding: 0px 12px;
     }
 }
 
