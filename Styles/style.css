@@ -140,7 +140,6 @@ svg {
 /* hero-section Start */
 .hero-bg-color {
     background-color: rgba(250, 250, 250, 1);
-    /* height: 100vh; */
 }
 
 .hero-section {
@@ -153,7 +152,7 @@ svg {
 }
 
 .hero-section .left-section {
-    width: 460px;
+    max-width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,6 +259,13 @@ svg {
     letter-spacing: 0px;
     text-align: center;
     color: rgba(24, 24, 27, 1);
+}
+
+@media only screen and (max-width:767px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* hero-section End */
@@ -765,7 +771,11 @@ svg {
     .header-container-landing .nav,
     .notification,
     .profile,
-    main,
+    .about-section,
+    .whyus-section,
+    .howitwork-section,
+    .ourwork-section,
+    .ouruser-section,
     footer {
         display: none;
     }
@@ -891,6 +901,12 @@ svg {
     .header-container .header-logo,
     .header-container-landing .header-logo {
         width: 105px;
+    }
+    .header-container-landing .raise-ticket .raise-ticket-btn{
+        padding: 0px 5px;
+        font-size: 12px;
+        height: 35px;
+        margin-right: 2px;
     }
 }
 
