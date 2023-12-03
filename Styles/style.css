@@ -282,6 +282,9 @@ svg {
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
+    .hero-bg-color{
+        height: max-content;
+    }
     .hero-section {
         gap: 30px;
         padding: 100px 10px 121px 10px;
@@ -292,8 +295,9 @@ svg {
     }
 
     .hero-section .left-section .heading {
-        font-size: 48px;
+        font-size: 36px;
         margin: 0px auto;
+        line-height: 42px;
     }
 
     .hero-section .right-section {
@@ -386,6 +390,10 @@ svg {
     width: 85%;
 }
 
+.about-section .right-section .heading.sm{
+    width: 80%;
+}
+
 .about-section .right-section .sub-heading {
     width: 86%;
     margin-bottom: 31px;
@@ -446,6 +454,16 @@ svg {
         margin-bottom: 14px;
     }
 
+    .about-section .right-section .read-more{
+        z-index: 0;
+    }
+
+    .ourwork-section .heading {
+        font-size: 24px;
+        width: 100%;
+        line-height: 30px;
+    }
+
     #aboutus {
         width: 180% !important;
         height: max-content !important;
@@ -468,8 +486,12 @@ svg {
 @media only screen and (max-width:767px) {
     .about-section {
         flex-direction: column;
-        padding: 50px 10px;
+        padding: 100px 10px;
         text-align: center;
+    }
+
+    .about-section .right-section .read-more{
+        z-index: 0;
     }
 
     .about-section .left-section {
@@ -491,6 +513,7 @@ svg {
     }
 
     .about-section .right-section .heading,
+    .about-section .right-section .heading.sm,
     .about-section .right-section .sub-heading {
         font-size: 36px;
         margin: 0px auto;
@@ -766,7 +789,7 @@ svg {
     min-width: 161px !important;
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:767px) {
     .ourwork-section {
         padding: 50px 10px;
     }
@@ -777,6 +800,8 @@ svg {
 
     .ourwork-section .heading {
         font-size: 24px;
+        width: 100%;
+        line-height: 30px;
     }
 
     /* .ourwork-section .ourwork-cards .card-items .sub-heading {
@@ -1200,6 +1225,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
 }
 
 .get-with-us-container .get-with-us-items .heading {
@@ -1209,6 +1235,29 @@ svg {
 .get-with-us-container .get-with-us-items .sub-heading {
     margin-top: 11px;
     line-height: 26px;
+}
+
+@media only screen and (max-width:767px) {
+    .hero-bg-color{
+        height: max-content;
+    }
+    .about-us-landing{
+        padding-top: 120px;
+    }
+    .about-us-landing .heading{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .get-with-us-container{
+        flex-direction: column;
+    }
+    .get-with-us{
+        padding: 0px 20px;
+    }
+    .get-with-us-container .get-with-us-items .heading{
+        line-height: 40px;
+        font-size: 24px;
+    }
 }
 
 /* Get with us End */
@@ -1232,7 +1281,7 @@ svg {
 .digi-solution {
     max-width: 1300px;
     gap: 98px;
-    padding: 0px;
+    padding: 0px 20px;
 }
 
 .real-time .right-section .heading,
@@ -1256,6 +1305,7 @@ svg {
 .complement-for-us .heading {
     font-size: 52px;
     font-weight: 700;
+    padding: 0px 20px;
 }
 
 .complement-for-us .sub-heading {
@@ -1265,6 +1315,54 @@ svg {
     font-weight: 400;
     line-height: 26px;
     color: rgba(82, 82, 91, 1);
+}
+
+@media only screen and (min-width:767px) and (max-width:1024px) {
+    .real-time, .digi-solution{
+        gap: 0px;
+        padding: 20px 10px;
+    }
+    .complement-for-us .heading{
+        font-size: 40px;
+        line-break: 20px;
+    }
+    .ourwork-section .heading{
+        width: 100%;
+    }
+    .get-with-us-container{
+        padding: 20px 15px;
+        gap: 50px;
+    }
+    .get-with-us-container .get-with-us-items .heading{
+        line-height: 40px;
+        font-size: 30px;   
+    }
+    .real-time .right-section .heading, .digi-solution .right-section .heading{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .real-time, .digi-solution{
+        gap: 0px;
+        padding: 20px 10px;
+    }
+    .complement-for-us .heading{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .title-header .heading{
+        font-size: 32px;
+        margin-top: 24px;
+    }
+    .title-header .sub-heading{
+        margin-bottom: 24px;
+    }
+    .real-time .right-section .heading, .digi-solution .right-section .heading{
+        font-size: 26px;
+        line-height: 30px;
+    }
 }
 
 /* Complement for us End */
@@ -1290,7 +1388,7 @@ svg {
 .conntect-us {
     display: flex;
     gap: 101px;
-    padding: 230px 0px 76px 0px;
+    padding: 230px 20px 76px 20px;
     max-width: 1290px;
     margin: 0px auto;
 }
@@ -1375,7 +1473,7 @@ svg {
 }
 
 .conntect-us .right-section .contact-form .user-inputs .phn {
-    width: 84.11%;
+    /* width: 84.11%; */
     position: relative;
     left: -4px;
     border-radius: 0px 4px 4px 0px;
@@ -1394,6 +1492,66 @@ svg {
     width: 100%;
 }
 
+@media only screen and (min-width:767px) and (max-width:1024px) {
+    .conntect-us{
+        padding: 50px 20px;
+        gap: 50px;
+    }
+    .conntect-us .right-section .contact-form .first-last{
+        flex-direction: column;
+        padding: 20px 10px;
+        width: 323px;
+    }
+    .conntect-us .right-section .contact-form .form-input,.conntect-us .right-section .contact-form .raise-a-ticket-btn{
+        max-width: 100%;
+        min-width: 0px;
+    }
+    .conntect-us .left-section{
+        max-width: 100%;
+    }
+    .conntect-us .left-section .heading{
+        font-size: 36px;
+    }
+    .conntect-us .left-section .sub-heading{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .conntect-us .right-section .contact-form{
+        padding: 10px 20px 30px 20px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .conntect-us{
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+    .conntect-us .right-section .contact-form .first-last{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .conntect-us .right-section .contact-form .form-input,.conntect-us .right-section .contact-form .raise-a-ticket-btn{
+        max-width: 100%;
+        min-width: 0px;
+    }
+    .conntect-us .left-section{
+        max-width: 100%;
+        text-align: center !important;
+    }
+    .conntect-us .left-section .heading{
+        font-size: 36px;
+        text-align: center;
+    }
+    .conntect-us .left-section .sub-heading{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .conntect-us .right-section .contact-form{
+        padding: 10px 20px 30px 20px;
+    }
+}
+
 /* conntect us End */
 
 /* Contact Us Page End */
@@ -1406,7 +1564,7 @@ svg {
 .network-service {
     max-width: 1140px;
     gap: 98px;
-    padding: 60px 0px;
+    padding: 60px 20px;
 }
 
 .hero-section .left-section .sub-heading.service-heading {
@@ -1443,6 +1601,7 @@ svg {
     margin: 0px auto;
     position: relative;
     top: -130px;
+    padding: 0px 20px;
 }
 
 .service-cards .service-card-items {
@@ -1479,6 +1638,34 @@ svg {
 
 .firewall-heading{
     width: 92%;
+}
+
+@media only screen and (max-width:767px) {
+    .service-cards{
+        top: -80px;
+        padding: 0px 15px;
+    }
+    .service-cards .service-card-items{
+        text-align: center;
+        padding: 20px 22px;
+    }
+    .service-cards .service-card-items .heading{
+        text-align: center;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .service-cards .service-card-items .sub-heading{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hero-section .left-section .heading{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .server-and-storage{
+        padding-top: 0px !important;
+    }
+
 }
 
 /* Network Hero end */
