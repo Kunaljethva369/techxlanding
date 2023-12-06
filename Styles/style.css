@@ -111,6 +111,10 @@ svg {
     color: #EC6C21;
 }
 
+.header-container-landing .nav ul li a.active {
+    color: #EC6C21;
+}
+
 .header-container-landing .nav ul li:last-child a::before {
     content: "";
     border: 1px solid rgba(212, 212, 216, 1);
@@ -1830,10 +1834,21 @@ svg {
         margin: 10px 0px;
     }
 
-    .nav-mob ul li.active {
-        border-bottom: 1px solid #0D4D8A;
-        border-bottom-width: 2px;
-        width: max-content;
+    .nav-mob ul li a {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: rgba(24, 24, 27, 1);
+        text-decoration: none;
+    }
+    
+    .nav-mob ul li a:hover {
+        color: #EC6C21;
+    }
+    
+    .nav-mob ul li a.active {
+        color: #EC6C21;
     }
 
     .notification-mob {
