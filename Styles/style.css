@@ -220,7 +220,7 @@ svg {
     border-radius: 10px;
     background: rgba(242, 242, 242, 1);
     position: absolute;
-    top: 20px;
+    top: -13px;
 }
 
 .indicators {
@@ -256,7 +256,7 @@ svg {
     align-items: center;
     height: inherit;
     position: relative;
-    top: 28.5px;
+    top: -5.5px;
     background-color: rgba(226, 226, 226, 1);
     width: 300px;
     margin: 0px auto;
@@ -272,16 +272,20 @@ svg {
     color: rgba(24, 24, 27, 1);
 }
 
+.hero-section .right-section img{
+    width: 688px;
+}
+
 @media only screen and (min-width:102px) and (max-width:1300px) {
     .hero-section .right-section .title-bar {
-        top: 10px;
+        top: -16px;
     }
 
     .hero-section .right-section .url-indicator {
         max-width: 200px;
         margin-right: 20px;
         margin-left: auto;
-        top: 16px;
+        top: -8px;
     }
 }
 
@@ -309,14 +313,14 @@ svg {
     }
 
     .hero-section .right-section .title-bar {
-        top: 3px;
+        top: -16px;
     }
 
     .hero-section .right-section .url-indicator {
         max-width: 200px;
         margin-right: 20px;
         margin-left: auto;
-        top: 11px;
+        top: -10px;
     }
 }
 
@@ -333,6 +337,7 @@ svg {
     .hero-section .left-section {
         margin: 0px auto;
         width: 100% !important;
+        margin-bottom: 20px;
     }
 
     .hero-section .left-section .heading {
@@ -346,14 +351,14 @@ svg {
     }
 
     .hero-section .right-section .title-bar {
-        top: 3px;
+        top: -16px;
     }
 
     .hero-section .right-section .url-indicator {
         max-width: 200px;
         margin-right: 20px;
         margin-left: auto;
-        top: 11px;
+        top: -10px;
     }
 }
 
