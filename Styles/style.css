@@ -158,6 +158,10 @@ svg {
     height: 850px;
 }
 
+.z-index{
+    z-index: 2;
+}
+
 .hero-section {
     display: flex;
     max-width: 1327px;
