@@ -60,13 +60,25 @@ svg {
 
 /* CSS Reset END */
 
+/* Fonts start */
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-display: swap;
+    src: url('../Fonts/Lato/Lato-Regular.ttf') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Fonts End */
+
 /* Landing Page Start */
 
 .landing-header {
     position: fixed;
     width: 100%;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header-container-landing {
@@ -154,12 +166,13 @@ svg {
     height: 680px;
 }
 
-.hero-bg-color.about-us, .hero-bg-color.contact-us{
+.hero-bg-color.about-us,
+.hero-bg-color.contact-us {
     height: 850px;
 }
 
-.z-index{
-    z-index: 2;
+.z-index {
+    z-index: 1;
 }
 
 .hero-section {
@@ -281,15 +294,19 @@ svg {
     color: rgba(24, 24, 27, 1);
 }
 
-.hero-section .right-section img{
-    box-shadow: 0px 9px 25px 5px rgba(0, 0, 0, 0.5);
+.hero-section .right-section img {
     width: 688px;
 }
 
+
+.hero-section .right-section .bxs {
+    box-shadow: 0px 9px 25px 5px rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (max-width: 767px) {
-    .hero-section .right-section img{
+    .hero-section .right-section .bsx {
         box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.5);
-    }   
+    }
 }
 
 @media only screen and (min-width:102px) and (max-width:1300px) {
@@ -306,9 +323,10 @@ svg {
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
-    .hero-bg-color{
+    .hero-bg-color {
         height: max-content;
     }
+
     .hero-section {
         gap: 30px;
         padding: 100px 10px 121px 10px;
@@ -413,7 +431,7 @@ svg {
     width: 85%;
 }
 
-.about-section .right-section .heading.sm{
+.about-section .right-section .heading.sm {
     width: 80%;
 }
 
@@ -477,7 +495,7 @@ svg {
         margin-bottom: 14px;
     }
 
-    .about-section .right-section .read-more{
+    .about-section .right-section .read-more {
         z-index: 0;
     }
 
@@ -513,7 +531,7 @@ svg {
         text-align: center;
     }
 
-    .about-section .right-section .read-more{
+    .about-section .right-section .read-more {
         z-index: 0;
     }
 
@@ -1177,7 +1195,7 @@ svg {
     text-decoration: none;
 }
 
-.w-80{
+.w-80 {
     max-width: 80%;
 }
 
@@ -1261,23 +1279,28 @@ svg {
 }
 
 @media only screen and (max-width:767px) {
-    .hero-bg-color{
+    .hero-bg-color {
         height: max-content;
     }
-    .about-us-landing{
+
+    .about-us-landing {
         padding-top: 120px;
     }
-    .about-us-landing .heading{
+
+    .about-us-landing .heading {
         font-size: 42px;
         line-height: 50px;
     }
-    .get-with-us-container{
+
+    .get-with-us-container {
         flex-direction: column;
     }
-    .get-with-us{
+
+    .get-with-us {
         padding: 0px 20px;
     }
-    .get-with-us-container .get-with-us-items .heading{
+
+    .get-with-us-container .get-with-us-items .heading {
         line-height: 40px;
         font-size: 24px;
     }
@@ -1341,48 +1364,63 @@ svg {
 }
 
 @media only screen and (min-width:767px) and (max-width:1024px) {
-    .real-time, .digi-solution{
+
+    .real-time,
+    .digi-solution {
         gap: 0px;
         padding: 20px 10px;
     }
-    .complement-for-us .heading{
+
+    .complement-for-us .heading {
         font-size: 40px;
         line-break: 20px;
     }
-    .ourwork-section .heading{
+
+    .ourwork-section .heading {
         width: 100%;
     }
-    .get-with-us-container{
+
+    .get-with-us-container {
         padding: 20px 15px;
         gap: 50px;
     }
-    .get-with-us-container .get-with-us-items .heading{
+
+    .get-with-us-container .get-with-us-items .heading {
         line-height: 40px;
-        font-size: 30px;   
+        font-size: 30px;
     }
-    .real-time .right-section .heading, .digi-solution .right-section .heading{
+
+    .real-time .right-section .heading,
+    .digi-solution .right-section .heading {
         font-size: 32px;
         line-height: 40px;
     }
 }
 
 @media only screen and (max-width:767px) {
-    .real-time, .digi-solution{
+
+    .real-time,
+    .digi-solution {
         gap: 0px;
         padding: 20px 10px;
     }
-    .complement-for-us .heading{
+
+    .complement-for-us .heading {
         font-size: 36px;
         line-height: 40px;
     }
-    .title-header .heading{
+
+    .title-header .heading {
         font-size: 32px;
         margin-top: 24px;
     }
-    .title-header .sub-heading{
+
+    .title-header .sub-heading {
         margin-bottom: 24px;
     }
-    .real-time .right-section .heading, .digi-solution .right-section .heading{
+
+    .real-time .right-section .heading,
+    .digi-solution .right-section .heading {
         font-size: 26px;
         line-height: 30px;
     }
@@ -1516,61 +1554,75 @@ svg {
 }
 
 @media only screen and (min-width:767px) and (max-width:1024px) {
-    .conntect-us{
+    .conntect-us {
         padding: 50px 20px;
         gap: 50px;
     }
-    .conntect-us .right-section .contact-form .first-last{
+
+    .conntect-us .right-section .contact-form .first-last {
         flex-direction: column;
         padding: 20px 10px;
         width: 323px;
     }
-    .conntect-us .right-section .contact-form .form-input,.conntect-us .right-section .contact-form .raise-a-ticket-btn{
+
+    .conntect-us .right-section .contact-form .form-input,
+    .conntect-us .right-section .contact-form .raise-a-ticket-btn {
         max-width: 100%;
         min-width: 0px;
     }
-    .conntect-us .left-section{
+
+    .conntect-us .left-section {
         max-width: 100%;
     }
-    .conntect-us .left-section .heading{
+
+    .conntect-us .left-section .heading {
         font-size: 36px;
     }
-    .conntect-us .left-section .sub-heading{
+
+    .conntect-us .left-section .sub-heading {
         width: 100%;
         margin-bottom: 10px;
     }
-    .conntect-us .right-section .contact-form{
+
+    .conntect-us .right-section .contact-form {
         padding: 10px 20px 30px 20px;
     }
 }
 
 @media only screen and (max-width:767px) {
-    .conntect-us{
+    .conntect-us {
         flex-direction: column;
         padding: 50px 20px;
         gap: 50px;
     }
-    .conntect-us .right-section .contact-form .first-last{
+
+    .conntect-us .right-section .contact-form .first-last {
         flex-direction: column;
         padding: 20px 10px;
     }
-    .conntect-us .right-section .contact-form .form-input,.conntect-us .right-section .contact-form .raise-a-ticket-btn{
+
+    .conntect-us .right-section .contact-form .form-input,
+    .conntect-us .right-section .contact-form .raise-a-ticket-btn {
         max-width: 100%;
         min-width: 0px;
     }
-    .conntect-us .left-section{
+
+    .conntect-us .left-section {
         max-width: 100%;
         text-align: center !important;
     }
-    .conntect-us .left-section .heading{
+
+    .conntect-us .left-section .heading {
         font-size: 36px;
         text-align: center;
     }
-    .conntect-us .left-section .sub-heading{
+
+    .conntect-us .left-section .sub-heading {
         width: 100%;
         margin-bottom: 10px;
     }
-    .conntect-us .right-section .contact-form{
+
+    .conntect-us .right-section .contact-form {
         padding: 10px 20px 30px 20px;
     }
 }
@@ -1610,6 +1662,22 @@ svg {
 /* Network Page Start */
 
 /* Network Hero start */
+
+.network-page {
+    height: 880px !important;
+}
+
+.network-service-container {
+    height: 920px;
+}
+
+.network-service-container .network-page .left-section {
+    justify-content: center !important;
+}
+
+.network-page .left-section {
+    justify-content: flex-start !important;
+}
 
 .hero-section.network-page .left-section {
     width: 45%;
@@ -1659,33 +1727,38 @@ svg {
     color: rgba(82, 82, 91, 1);
 }
 
-.firewall-heading{
+.firewall-heading {
     width: 92%;
 }
 
 @media only screen and (max-width:767px) {
-    .service-cards{
+    .service-cards {
         top: -80px;
         padding: 0px 15px;
     }
-    .service-cards .service-card-items{
+
+    .service-cards .service-card-items {
         text-align: center;
         padding: 20px 22px;
     }
-    .service-cards .service-card-items .heading{
+
+    .service-cards .service-card-items .heading {
         text-align: center;
         font-size: 24px;
         line-height: 24px;
     }
-    .service-cards .service-card-items .sub-heading{
+
+    .service-cards .service-card-items .sub-heading {
         font-size: 14px;
         line-height: 16px;
     }
-    .hero-section .left-section .heading{
+
+    .hero-section .left-section .heading {
         font-size: 36px;
         line-height: 40px;
     }
-    .server-and-storage{
+
+    .server-and-storage {
         padding-top: 0px !important;
     }
 
@@ -1697,8 +1770,9 @@ svg {
 
 /* Server and Storage Page Start */
 
-.server-and-storage{
+.server-and-storage {
     padding-top: 80px;
+    height: 880px !important;
 }
 
 /* Server and Storage Page End */
@@ -1861,11 +1935,11 @@ svg {
         color: rgba(24, 24, 27, 1);
         text-decoration: none;
     }
-    
+
     .nav-mob ul li a:hover {
         color: #EC6C21;
     }
-    
+
     .nav-mob ul li a.active {
         color: #EC6C21;
     }
