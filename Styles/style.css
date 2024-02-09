@@ -403,7 +403,7 @@ svg {
 .about-section {
     max-width: 1349px;
     margin: 0px auto;
-    padding: 84px 20px 143px 20px;
+    padding: 0px 20px 64px 20px;
     display: flex;
     align-items: center;
 }
@@ -649,7 +649,7 @@ svg {
 /* How it works Start */
 
 .howitwork-section {
-    padding: 44px 20px 124px 20px;
+    padding: 44px 20px 64px 20px;
     max-width: 1333px;
     margin: 0px auto;
 }
@@ -764,7 +764,6 @@ svg {
     max-width: 1439.37px;
     margin: 0px auto;
     padding: 64px 20px 58px 20px;
-    margin-top: 130px;
 }
 
 /* .ourwork-section .ourwork-cards {
@@ -861,7 +860,7 @@ svg {
 /* Our users start */
 
 .ouruser-section {
-    padding: 81px 20px 130px 20px;
+    padding: 81px 20px 64px 20px;
 }
 
 .ouruser-section .tag-line {
@@ -1328,6 +1327,10 @@ svg {
     max-width: 1300px;
     gap: 98px;
     padding: 0px 20px;
+}
+
+.real-time{
+    padding: 64px 20px;
 }
 
 .real-time .right-section .heading,
